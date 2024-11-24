@@ -31,7 +31,7 @@ jobs:
       - name: Running locust tests
         run: |
           # Command to start your Flask server
-          locust -f your_locust_file.py --host=http://127.0.0.1:5000 --users 10000 --spawn-rate 100 --headless --run-time 2m &
+          locust -f --host=http://127.0.0.1:5000 --users 10000 --spawn-rate 100 --headless --run-time 2m &
           echo "Waiting for locust to run"
           sleep 120
 
